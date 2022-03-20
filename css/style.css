@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	background-color: rgb(7, 54, 207);
+	overflow: hidden;
+}
+
+.main {
+	width: 40%;
+	min-height: 500px;
+	height: 100vh;
+	border-left:1px solid #fefefe;
+	border-right:1px solid #fefefe;
+	padding: 15px;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	flex-direction: column;
+	margin: 0px auto;	
+}
+
+.wrapper{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	flex-direction: column;
+	position: relative;
+	height: 50%;
+	width: 100%;
+}
+
+.wrapper h1 {
+	margin: 30px;
+	font-size: 4em;
+	color: chartreuse;
+	border-bottom: 4px solid lightblue;
+}
+
+#myform{
+	width: 80%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction: column;
+	padding: 10px;
+}
+
+input {
+	width: 100%;
+	padding: 15px 12px;
+	border-radius: 8px;
+	margin: 10px 0px;
+	border: none;
+	font-size: 18px;
+}
+
+input:focus{
+	outline: none;
+}
+
+input[type="submit"]{
+	background-color: rgb(12, 179, 45);
+	color: white;
+	
+	font-weight: 600;
+	text-transform: uppercase;
+	font-variant: small-caps;
+}
+
+/* list */
+#list{
+	list-style-type: none;
+	width: 80%;
+	margin: 20px 0px;
+}
+
+#list li {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding: 5px 15px;
+	background-color: #444;
+	border-radius: 8px;
+	color: palegoldenrod;
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin: 5px 0px 10px 0px;
+}
+
+li>button {
+	padding: 5px;
+	width: 10%;
+	border:none;
+	transition: 0.3s;
+	border-radius: 3px;
+}
+
+li>button i {
+	font-size: 20px;
+	color: red;
+}
+
+li>button:hover{
+	cursor: pointer;
+	transition: 0.3s;
+	background: rgb(195,138,34);
+background: linear-gradient(36deg, rgba(195,138,34,1) 0%, rgba(211,31,31,1) 100%);
+}
+
+li>button:hover i {
+animation: anima 0.5s 1 alternate both;
+color: rgb(109, 12, 12);
+}
+
+@keyframes anima{
+	0%{
+		transform: translateX(0px);
+	}
+	25%{
+		transform: translateX(-5px);
+		
+	}
+	50%{
+		transform: translateX(5px);
+	}
+	
+	100%{
+		transform: translateX(0px);
+
+	}
+}
